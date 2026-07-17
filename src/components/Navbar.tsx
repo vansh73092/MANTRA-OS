@@ -1,7 +1,8 @@
-import { useState } from "react";
-
 export default function Navbar() {
-  const [login, setLogin] = useState(false);
+
+  const handleLogin = () => {
+    window.location.href = "/login";
+  };
 
   return (
     <header className="w-full h-16 border-b border-zinc-800 bg-[#09090B] flex items-center justify-between px-6">
@@ -25,10 +26,10 @@ export default function Navbar() {
       </div>
 
       <button
-        onClick={() => setLogin(!login)}
+        onClick={handleLogin}
         className="px-5 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 transition text-white"
       >
-        {login ? "Logged In" : "Login"}
+        Login
       </button>
 
     </header>

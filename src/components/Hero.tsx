@@ -1,7 +1,7 @@
 export default function Hero() {
 
   const handleStart = () => {
-    window.location.href = "/workspace";
+    window.location.href = "/login";
   };
 
   return (
