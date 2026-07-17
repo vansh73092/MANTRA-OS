@@ -1,4 +1,9 @@
 export default function Hero() {
+
+  const handleStart = () => {
+    window.location.href = "/workspace";
+  };
+
   return (
     <section className="flex flex-col items-center justify-center flex-1 px-6 text-center">
 
@@ -21,11 +26,16 @@ export default function Hero() {
 
       <div className="mt-10 flex gap-4">
 
-        <button className="px-8 py-4 rounded-2xl bg-blue-600 hover:bg-blue-700 transition font-semibold">
+        <button
+          onClick={handleStart}
+          className="px-8 py-4 rounded-2xl bg-blue-600 hover:bg-blue-700 transition font-semibold text-white"
+        >
           Get Started
         </button>
 
-        <button className="px-8 py-4 rounded-2xl border border-zinc-700 hover:bg-zinc-900 transition">
+        <button
+          className="px-8 py-4 rounded-2xl border border-zinc-700 hover:bg-zinc-900 transition text-white"
+        >
           Learn More
         </button>
 
